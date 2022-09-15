@@ -1,0 +1,55 @@
+.carrossel-1 {
+
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    width: 1160px;
+    height: 32px;
+    justify-content: space-between;
+}
+
+
+#nature {
+
+    font-size: 32px;
+    font-weight: 500;
+
+}
+
+#all {
+
+    font-size: 20px;
+
+}
+
+.fotos-1 {
+
+    width: 1920px;
+    height: 215px;
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+#ok {
+    margin-left: 20px;
+}
+
+.carrossel-2 {
+
+    
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    width: 1160px;
+    height: 32px;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+#urban {
+
+    font-size: 32px;
+    font-weight: 500;
+}
+
