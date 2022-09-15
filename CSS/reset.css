@@ -6,8 +6,9 @@
 
 body {
     font-family: Rajdhani;
-    --background: #fafafa;
-    --principal: lightblue;
+    --background: #F0F0F0;
+    --principal: rgb(110, 143, 154);
+    background-color: var(--background);
     
 }
 
