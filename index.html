@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="CSS/Estilo.css">
+    <link rel="stylesheet" type="text/css" href="CSS/EstiloCarrossel.css">
+    <link rel="stylesheet" type="text/css" href="CSS/EstiloCarrossel copy.css">
     <link rel="stylesheet" type="text/css" href="CSS/reset.css">
     <link rel="stylesheet" type="text/css" href="CSS/menu.css">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 
 
     <title>My Gallery</title>
@@ -16,7 +19,7 @@
     <header class="menu-bg">
         <div class="menu">
             <div class="mygallery">
-                <img class="img" src="img/logo.svg">
+                <!-- <img class="img" src="img/logo.svg"> -->
                 <a href="mygallery.html" id="titulo">MY GALLERY</a>
             </div>
             <img class="hamb-img" src="img/hamb.svg">
@@ -25,50 +28,81 @@
 
     <main class="principal">
 
-    <section class="carrossel">
-        <div class="carrossel-header">
-            <div class="carrossel-titulo">
-                <a>NATURE</a>
+        <section class="carrossel">
+            <div class="carrossel-header">
+                <div class="carrossel-titulo">
+                    <a>urban</a>
+                </div>
+                <div class="all">
+                    <a>ver tudo></a>
+                </div>
             </div>
-            <div class="all">
-                <a>ver tudo></a>
+
+            <div class="box-carrossel">
+            <div class="container">
+                <button type="button" id="moveLeft" class="btn-nav">
+                  ᐊ
+                </button>
+                <div class="container-indicators">
+                  <div class="indicator active" data-index=0></div>
+                  <div class="indicator" data-index=1></div>
+                  <div class="indicator" data-index=2></div>
+                </div>
+                <div class="slider" id="mySlider">
+                  <div class="movie" id="movie0">
+                    <img
+                      src="https://images.unsplash.com/photo-1585951237318-9ea5e175b891?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                      alt="" srcset="">
+                    </div>
+                  </div>
+                <button type="button" id="moveRight" class="btn-nav">ᐅ</button>
+                </div>
+              </div>
             </div>
-        </div>
             
-        <div class="fotos">
-            <img src="img/Nature/Q0.jpg">
-            <img src="img/Nature/Q5.jpg">
-            <img src="img/Nature/Q4.jpg">
-            <img src="img/Nature/Q3.jpg">
-            <img src="img/Nature/Q2.jpg">
-            <img src="img/Nature/Q1.jpg">
-            <img src="img/Nature/Q6.jpg">
-        </div>
-
-    </section>
-
-
-    <section class="carrossel">
-        <div class="carrossel-header">
-            <div class="carrossel-titulo">
-                <a>URBAN</a>
-            </div>
-            <div class="all">
-                <a>ver tudo></a>
-            </div>
-        </div>
             
-        <div class="fotos">
-            <img src="img/Urban/Q9.jpg">
-            <img src="img/Urban/Q5.jpg">
-            <img src="img/Urban/Q4.jpg">
-            <img src="img/Urban/Q1.jpg">
-            <img src="img/Urban/Q3.jpg">
-            <img src="img/Urban/Q2.jpg">
-            <img src="img/Urban/Q6.jpg">
-        </div>
+            <script src="script.js"></script>
 
-    </section>
+            </section>
+
+
+            <section class="carrossel">
+                <div class="carrossel-header">
+                    <div class="carrossel-titulo">
+                        <a>nature</a>
+                    </div>
+                    <div class="all">
+                        <a>ver tudo></a>
+                    </div>
+                </div>
+    
+                <div class="box-carrossel">
+                <div class="container">
+                    <button type="button" id="moveLeft" class="btn-nav">
+                      ᐊ
+                    </button>
+                    <div class="container-indicators">
+                      <div class="indicator active" data-index=0></div>
+                      <div class="indicator" data-index=1></div>
+                      <div class="indicator" data-index=2></div>
+                    </div>
+                    <div class="slider" id="mySlider">
+                      <div class="movie" id="movie0">
+                        <img
+                          src="https://images.unsplash.com/photo-1585951237318-9ea5e175b891?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                          alt="" srcset="">
+
+                        </div>
+                      </div>
+                    <button type="button" id="moveRight" class="btn-nav">ᐅ</button>
+                    </div>
+                  </div>
+                </div>
+                
+                
+                <script src="script copy.js"></script>
+    
+                </section>
 
     
 

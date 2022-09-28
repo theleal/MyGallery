@@ -17,25 +17,17 @@
 
     font-size: 32px;
     font-weight: 500;
-
-}
-
-.all {
-
+    color: #ffffff;
+    
+  }
+  
+  .all {
+    
+    color: #ffffff;
     font-size: 20px;
 
 }
-
-.fotos {
-
-    width: 1920px;
-    height: 215px;
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
-    
-}
-
+  
 
 
 @media only screen and (max-width: 1160px) {

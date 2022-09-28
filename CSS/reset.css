@@ -6,9 +6,10 @@
 
 body {
     font-family: Rajdhani;
-    --background: #F0F0F0;
-    --principal: rgb(110, 143, 154);
+    --background: #090909;
+    --principal: #000000;
     background-color: var(--background);
+    position: relative;
     
 }
 
@@ -30,5 +31,6 @@ img {
 
 html, body { 
     height: 100%;
-    overflow: hidden
+    overflow: hidden;
+    position: relative;
 }

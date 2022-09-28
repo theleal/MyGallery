@@ -15,8 +15,8 @@
 }
 
 .img {
-    height: 32px;
-    width: 32px;
+    height: 34px;
+    width: 34px;
 }
 
 .menu {
@@ -34,9 +34,9 @@
 }
 
 #titulo {
-    font-size: 32px;
+    font-size: 36px;
     color: white;
-    font-weight: 500;
+    font-weight:700;
 }
 
 .hamb-img {

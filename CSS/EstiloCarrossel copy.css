@@ -1,0 +1,167 @@
+/*
+*
+* Boiler Plate stuff 
+*
+*********************************/
+:root {
+    --movie-width: auto;
+    --movie-height: 215px;
+    --arrow-width: 50px;
+    --slider-py: 20px;
+  }
+  @media only screen and (max-width: 1000px) {
+    :root {
+      --movie-width: 25vw;
+    }
+  }
+  
+  body {
+    background-color: #141414;
+    font-family: "Heebo", sans-serif;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+
+  }
+  
+  .logo {
+    color: red;
+    font-size: 4rem;
+    text-align: center;
+
+  }
+  
+  /*
+  *
+  * THE SLIDER CONTAINER
+  *
+  *********************************/
+  .slider {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding-top: var(--slider-py);
+    padding-bottom: var(--slider-py);
+  }
+  
+  /*
+  *
+  * SLIDER INDICATORS
+  *
+  *********************************/
+  .container-indicators {
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: calc(var(--slider-py) - 60px);
+    visibility: hidden;
+
+  }
+  .indicator {
+    width: 15px;
+    height: 2px;
+    background-color: grey;
+    display: inline-block;
+
+  }
+  .indicator.active {
+    background-color: white;
+
+  }
+  
+  /*
+  *
+  * MOVIE ELEMENTS!
+  *
+  *********************************/
+  .movie1 {
+    width: var(--movie-width);
+    height: var(--movie-height);
+    display: inline-block;
+    position: relative;
+    color: white;
+    padding: 0 2px;
+    font-size: 0.8rem;
+    transition: all 0.2s ease-in-out;
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+  
+  .movie1:nth-of-type(1) {
+    margin-left: var(--arrow-width);
+
+  }
+  
+  .movie1 img {
+    object-fit: contain;
+    height: 215px;
+    width: auto;
+
+  }
+  
+ 
+  
+  @media only screen and (min-width: 900px) {
+    .movie1:hover {
+      transform: scale(1.1);
+      z-index: 2;
+      cursor: pointer;
+     
+    }
+    /* Make description visible when movie is hovered */
+    .movie1:hover > .description {
+      display: block;
+    }
+    .movie1:hover > img {
+      border-bottom-left-radius: 10;
+      border-bottom-right-radius: 10;
+    }
+  }
+  
+  
+  /*
+  *
+  * BUTTONS
+  *
+  *********************************/
+  .btn-nav {
+    width: var(--arrow-width);
+    height: var(--movie-height);
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    outline: none;
+    border: none;
+    color: white;
+    top: var(--slider-py);
+    z-index: 5;
+    visibility: hidden;
+  }
+  
+  #moveLeft {
+    left: 0;
+  }
+  
+  #moveRight {
+    right: 0;
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .btn-nav {
+      display: visible;
+    }
+  }
+  
+  @media only screen and (min-width: 900px) {
+    .container:hover .btn-nav,
+    .container:hover .container-indicators {
+      visibility: visible;
+    }
+  }
+  
